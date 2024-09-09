@@ -57,23 +57,23 @@ function Projects() {
           align={'right'}
         />
         <Project
-          appTitle={'BlackJack Game ♠️'}
-          paragraph={`A car rental website is an online platform that allows users to rent
-          cars for personal or business use. The website provides an interface
-          for searching, comparing, and reserving dars.`}
-          techStack={['React', 'SCSS']}
-          image={blackJackImg}
-          imgAlt={'blackJack Image'}
-          align={'left'}
-        />
-        <Project
           appTitle={'usePopcorn Movies App'}
           paragraph={`A car rental website is an online platform that allows users to rent
-          cars for personal or business use. The website provides an interface
-          for searching, comparing, and reserving dars.`}
+            cars for personal or business use. The website provides an interface
+            for searching, comparing, and reserving dars.`}
           techStack={['React', 'SCSS']}
           image={usePopcornImg}
           imgAlt={'usePopcorn Image'}
+          align={'left'}
+        />
+        <Project
+          appTitle={'BlackJack Game ♠️'}
+          paragraph={`A car rental website is an online platform that allows users to rent
+              cars for personal or business use. The website provides an interface
+              for searching, comparing, and reserving dars.`}
+          techStack={['React', 'SCSS']}
+          image={blackJackImg}
+          imgAlt={'blackJack Image'}
           align={'right'}
         />
         <Project
