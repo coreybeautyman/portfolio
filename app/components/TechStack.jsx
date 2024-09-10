@@ -81,7 +81,7 @@ function TechStack() {
           variants={listVariant}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap items-center justify-center space-x-8 lg:px-16"
+          className="flex flex-wrap items-center justify-center space-x-6 lg:space-x-8 lg:px-16"
         >
           <motion.li
             variants={itemVariant}

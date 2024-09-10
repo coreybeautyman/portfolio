@@ -47,8 +47,8 @@ function Hero() {
           transition={{ duration: 1, delay: 1 }}
           className="mb-11 max-w-2xl text-center text-lg lg:w-10/12 lg:text-left"
         >
-          Hi, I'm Corey Beautyman.Passionate a junior full stack developer with
-          a strong foundation in modern web technologies. I build scalable,
+          Hi, I'm Corey Beautyman, I'm a junior full stack developer with a
+          strong foundation in modern web technologies. I build scalable,
           user-friendly applications that bring creative ideas to life, from
           front-end design to back-end functionality.
         </motion.p>

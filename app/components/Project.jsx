@@ -53,9 +53,9 @@ function Project({
       variants={containerVariants}
       className={`mb-10 flex flex-col items-center lg:space-x-16 lg:flex-row${align === 'right' ? '-reverse' : ''} ${align === 'right' ? 'lg:space-x-reverse' : ''}`}
     >
-      <div className="text-center lg:max-w-xs">
+      <div className="max-w-2xl text-center lg:max-w-sm">
         <h2 className="text-lg font-bold">{appTitle}</h2>
-        <p className="mt-4">{paragraph}</p>
+        <p className="mt-4 text-neutral-600">{paragraph}</p>
         <div className="mt-6 flex justify-center font-bold">
           {techStack?.map((tech, i) => (
             <h3 key={i} className="mx-3">
