@@ -28,17 +28,14 @@ function Hero() {
     >
       <motion.div
         initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: isImageLoaded ? 1 : 0, y: isImageLoaded ? 0 : -50 }}
         transition={{ duration: 1, delay: isLarge() ? 1 : 0.5 }}
-        className="mb-14"
+        className={`mb-14 ${isImageLoaded ? 'visible' : 'invisible'}`}
       >
         <Image
           src={profileImg}
           alt="profile image"
-          className={
-            isImageLoaded &&
-            'max-w-72 rounded-full border-4 border-green-600 object-cover transition-all duration-700'
-          }
+          className={`max-w-72 rounded-full border-4 border-green-600 object-cover transition-all duration-700 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoadingComplete={handleIsImageLoaded}
         />
       </motion.div>
