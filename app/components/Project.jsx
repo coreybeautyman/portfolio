@@ -65,23 +65,29 @@ function Project({
         </div>
         <div>
           <div className="mt-6 flex justify-center">
-            <button className="mx-3 flex cursor-pointer items-center justify-center duration-300 ease-in-out hover:scale-110 hover:text-green-600">
-              <h3 className="mx-1">Code</h3>
-              <FaGithub />
-            </button>
-            <button className="mx-3 flex cursor-pointer items-center justify-center duration-300 ease-in-out hover:scale-110 hover:text-green-600">
-              <h3 className="mx-1">Live Demo</h3>
-              <FaExternalLinkAlt />
-            </button>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <button className="mx-3 flex cursor-pointer items-center justify-center duration-300 ease-in-out hover:scale-110 hover:text-green-600">
+                <h3 className="mx-1">Code</h3>
+                <FaGithub />
+              </button>
+            </a>
+            <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
+              <button className="mx-3 flex cursor-pointer items-center justify-center duration-300 ease-in-out hover:scale-110 hover:text-green-600">
+                <h3 className="mx-1">Live Demo</h3>
+                <FaExternalLinkAlt />
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <Image
-        src={image}
-        alt={imgAlt}
-        width={550}
-        className="my-10 cursor-pointer items-center justify-center rounded-xl duration-300 ease-in-out hover:scale-105"
-      />
+      <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
+        <Image
+          src={image}
+          alt={imgAlt}
+          width={550}
+          className="my-10 cursor-pointer items-center justify-center rounded-xl duration-300 ease-in-out hover:scale-105"
+        />
+      </a>
     </motion.div>
   )
 }

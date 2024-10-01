@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar'
-import AppleNavBar from './components/AppleNavBar'
+
 import Hero from './components/Hero'
 import TechStack from './components/TechStack'
 import AboutMe from './components/AboutMe'

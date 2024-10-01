@@ -48,43 +48,43 @@ function Projects() {
       <div className="flex flex-col items-center">
         <Project
           appTitle={'WorldWise'}
-          paragraph={`A car rental website is an online platform that allows users to rent
-          cars for personal or business use. The website provides an interface
-          for searching, comparing, and reserving dars.`}
-          techStack={['React', 'SCSS']}
+          paragraph={`A travel tracker app that lets users log countries and cities, add personal reflections, and record visit dates. With an interactive map, users can easily pin locations and see all their logged destinations at a glance.`}
+          techStack={['React', 'CSS']}
           image={worldWiseImg}
           imgAlt={'WorldWise Image'}
           align={'right'}
+          liveDemoLink={'https://corey-worldwise.netlify.app/'}
+          githubLink={'https://github.com/coreybeautyman/worldwise'}
         />
         <Project
           appTitle={'usePopcorn Movies App'}
-          paragraph={`A car rental website is an online platform that allows users to rent
-            cars for personal or business use. The website provides an interface
-            for searching, comparing, and reserving dars.`}
-          techStack={['React', 'SCSS']}
+          paragraph={`A movie app that allows users to search for films, add them to their watched list, and rate them with a star system. Users can easily track their movie history and manage their personal ratings.`}
+          techStack={['React', 'CSS']}
           image={usePopcornImg}
           imgAlt={'usePopcorn Image'}
           align={'left'}
+          liveDemoLink={'https://corey-usepopcorn.netlify.app/'}
+          githubLink={'https://github.com/coreybeautyman/usePopcorn'}
         />
         <Project
-          appTitle={'BlackJack Game ♠️'}
-          paragraph={`A car rental website is an online platform that allows users to rent
-              cars for personal or business use. The website provides an interface
-              for searching, comparing, and reserving dars.`}
-          techStack={['React', 'SCSS']}
+          appTitle={'BlackJack Game'}
+          paragraph={`A blackjack app that enables users to engage in gameplay against the dealer, either as a single player or in a two-player mode. Users can earn coins through gameplay, manage their personal wallet, and strategically gamble with their accumulated coins for an enhanced gaming experience.`}
+          techStack={['React', 'CSS']}
           image={blackJackImg}
           imgAlt={'blackJack Image'}
           align={'right'}
+          liveDemoLink={'https://corey-blackjack-react.netlify.app/'}
+          githubLink={'https://github.com/coreybeautyman/Blackjack-React'}
         />
         <Project
-          appTitle={'Mapty workout App'}
-          paragraph={`A car rental website is an online platform that allows users to rent
-          cars for personal or business use. The website provides an interface
-          for searching, comparing, and reserving dars.`}
-          techStack={['React', 'SCSS']}
+          appTitle={'Mapty Workout App'}
+          paragraph={`A comprehensive workout app that allows users to track their running and cycling activities. Users can easily log workouts, visualise their progress on an interactive map, and sort their activities for a streamlined fitness experience.`}
+          techStack={['React', 'CSS']}
           image={maptyImg}
           imgAlt={'Mapty Image'}
           align={'left'}
+          liveDemoLink={'https://corey-mapty.netlify.app/'}
+          githubLink={'https://github.com/coreybeautyman/Mapty'}
         />
       </div>
     </div>

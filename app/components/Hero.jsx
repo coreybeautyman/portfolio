@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import profileImg from '../../public/LinkedIn-studio-headshot-photographer-london-1024x1024.jpg'
+import profileImg from '../../public/Corey-headshot.jpg'
 import { PiLinkedinLogoBold } from 'react-icons/pi'
 import { FiGithub } from 'react-icons/fi'
 import { motion } from 'framer-motion'
@@ -59,14 +59,26 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.3 }}
           >
-            <PiLinkedinLogoBold className="cursor-pointer duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+            <a
+              href={'https://www.linkedin.com/in/corey-beautyman-5639bb12b/'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PiLinkedinLogoBold className="cursor-pointer duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+            </a>
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.4 }}
           >
-            <FiGithub className="cursor-pointer duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+            <a
+              href={'https://github.com/coreybeautyman'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiGithub className="cursor-pointer duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+            </a>
           </motion.span>
         </div>
       </div>

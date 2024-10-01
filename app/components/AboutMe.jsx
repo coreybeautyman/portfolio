@@ -1,10 +1,8 @@
 'use client'
 
-import Image from 'next/image'
-import laptopImg from '../../public/laptop-computer-with-blank-screen-coffee-cup-and-2023-11-27-05-17-26-utc.JPG'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function AboutMe() {
   const controls = useAnimation()
@@ -14,11 +12,27 @@ function AboutMe() {
     threshold: 0.5,
   })
 
+  const [hasScrolled, setHasScrolled] = useState(false)
+
   useEffect(() => {
-    if (inView) {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHasScrolled(true)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (inView && hasScrolled) {
       controls.start('visible')
     }
-  }, [controls, inView])
+  }, [controls, inView, hasScrolled])
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -55,7 +69,8 @@ function AboutMe() {
             years of leading complex video projects and collaborating with
             diverse teams in the media industry, I transitioned into software
             development, completing intensive bootcamps in JavaScript, React,
-            and back-end technologies.
+            and back-end technologies such as Node, Express, MongoDB and
+            Mongoose.
           </p>
           <p>
             I’ve developed and deployed full-scale applications using the MERN

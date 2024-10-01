@@ -41,10 +41,22 @@ function Footer() {
       </h2>
       <div className="flex items-center justify-center pb-10">
         <button>
-          <TbBrandLinkedin className="mx-2 text-4xl duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+          <a
+            href={'https://www.linkedin.com/in/corey-beautyman-5639bb12b/'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TbBrandLinkedin className="mx-2 text-4xl duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+          </a>
         </button>
         <button>
-          <FiGithub className="mx-2 text-2xl duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+          <a
+            href={'https://github.com/coreybeautyman'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiGithub className="mx-2 text-2xl duration-300 ease-in-out hover:scale-110 hover:text-green-600" />
+          </a>
         </button>
       </div>
     </motion.div>
