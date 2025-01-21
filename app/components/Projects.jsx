@@ -5,6 +5,7 @@ import blackJackImg from '../../public/Blackjackimg.png'
 import usePopcornImg from '../../public/usePopcorn.png'
 import worldWiseImg from '../../public/worldWise.png'
 import maptyImg from '../../public/mapty.png'
+import natoursImg from '../../public/natoursImg.png'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
@@ -46,6 +47,16 @@ function Projects() {
         </h1>
       </motion.div>
       <div className="flex flex-col items-center">
+        <Project
+          appTitle={'Natours'}
+          paragraph={`Natours is a full-stack web app for booking tours. Users can create an account, sign in, and manage their bookings. Features include email sign-up, password reset via email, and secure payments with Stripe. Users can browse tours, book activities, and update their profile with a name, email, and profile picture.`}
+          techStack={['React', 'CSS', 'MongoDB', 'Express', 'Node']}
+          image={natoursImg}
+          imgAlt={'Natours Image'}
+          align={'left'}
+          liveDemoLink={'https://corey-react-natours.netlify.app'}
+          githubLink={'https://github.com/coreybeautyman/natours'}
+        />
         <Project
           appTitle={'WorldWise'}
           paragraph={`A travel tracker app that lets users log countries and cities, add personal reflections, and record visit dates. With an interactive map, users can easily pin locations and see all their logged destinations at a glance.`}
