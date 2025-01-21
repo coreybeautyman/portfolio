@@ -47,7 +47,7 @@ function Hero() {
             transition={{ duration: 1, delay: isLarge() ? 0.7 : 1 }}
             className="mb-7 text-center text-5xl font-extrabold lg:text-left lg:text-6xl"
           >
-            Junior Full-stack <br />
+            Junior Full-Stack <br />
             Developer
           </motion.h1>
           <motion.p
